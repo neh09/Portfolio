@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha Paluru's Portfolio</title>
+  <style>
+    /* Global Styles */
+    /* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+/* Layout */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  padding: 40px 0;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+section p {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Header and Profile Picture */
+#name-picture {
+  text-align: center;
+  background-color: #0066cc;
+  color: white;
+  padding: 60px 0;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+}
+
+#name-picture h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#name-picture p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* Digital Presence */
+#digital-presence ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+#digital-presence li {
+  display: inline;
+  margin: 10px 20px;
+}
+
+#digital-presence a {
+  font-size: 1.2rem;
+  color: #0066cc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#digital-presence a:hover {
+  color: #003366;
+}
+
+/* Experience */
+#experience {
+  background-color: #f9f9f9;
+}
+
+#experience ul {
+  text-align: left;
+}
+
+#experience ul li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+#experience ul li:before {
+  content: '\2022';
+  font-size: 1.5rem;
+  color: #0066cc;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Skills */
+#skills {
+  background-color: #f9f9f9;
+}
+
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#skills li {
+  background-color: #0066cc;
+  color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+#skills li:hover {
+  transform: translateY(-5px);
+}
+
+/* Projects */
+#projects .project {
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#projects .project:hover {
+  transform: translateY(-5px);
+}
+
+#projects a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#projects a:hover {
+  background-color: #003366;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  #name-picture h1 {
+    font-size: 2.5rem;
+  }
+
+  #name-picture p {
+    font-size: 1.3rem;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+
+  #skills li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  #name-picture h1 {
+    font-size: 2rem;
+  }
+
+  #name-picture p {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Name and Picture -->
+  <section id="name-picture">
+    <div class="container">
+      <img src="/Passportsize photo.jpeg" alt="Neha Paluru" class="profile-picture">
+      <h1>Neha Paluru</h1>
+      <p>Software Developer | Cloud Storage API Specialist</p>
+    </div>
+  </section>
+
+  <!-- Digital Presence -->
+  <section id="digital-presence">
+    <div class="container">
+      <h2>Connect with me</h2>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/neha-paluru-9952b9246" target="_blank">LinkedIn</a></li>
+        <li><a href="https://leetcode.com/20121A05K7/" target="_blank">LeetCode</a></li>
+        <li><a href="mailto:nehapaluru@gmail.com" target="_blank">Email</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about-me">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a highly motivated and detail-oriented fresher with a solid understanding of software development. I am eager to leverage my strong analytical skills and technical expertise to contribute to innovative technology solutions. I possess a keen interest in learning and adapting to new technologies to contribute effectively to any team.</p>
+      <p>Skills: Java, MySQL, HTML, CSS, JavaScript, Strong Communication Skills</p>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>As a fresher, I have had the opportunity to work on several projects and complete an internship where I gained hands-on experience in web development, including HTML, CSS, and JavaScript.</p>
+      <h3>Internship: Web Development Internship - Oasis InfoByte</h3>
+      <p>Duration: June 2023 - July 2023</p>
+      <ul>
+        <li>Developed and maintained web pages using HTML, CSS, and JavaScript.</li>
+        <li>Collaborated with the design team to implement responsive and user-friendly interfaces.</li>
+        <li>Assisted in troubleshooting, debugging, and optimizing web applications.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Java</li>
+        <li>MySQL</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Strong Communication Skills</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Lung Disease Detection Using Machine Learning</h3>
+        <p>This project uses deep learning models like VGG-19, Inception V3, and EfficientNet B7 to detect lung diseases from chest X-ray images. It aims to provide scalable and accurate solutions for early detection of lung diseases.</p>
+        <p>Duration: December 2023 - May 2024</p>
+        <a href="https://github.com/yourrepo/lung-disease-detection" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Password Generator Using Java</h3>
+        <p>A customizable password generator built using Java to create strong, random passwords for users. The program allows customization of password length and the inclusion of special characters, numbers, etc.</p>
+        <p>Duration: August 2023 - September 2023</p>
+        <a href="https://github.com/yourrepo/password-generator" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Neha Paluru. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scroll to sections
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
